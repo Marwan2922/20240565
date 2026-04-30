@@ -1,0 +1,10 @@
+class Comment {
+public:
+    string text;
+};
+
+class Post {
+public:
+    string title;
+    vector<Comment> comments;
+};
