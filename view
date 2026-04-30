@@ -1,0 +1,8 @@
+void view(vector<Post> posts) {
+    for (int i = 0; i < posts.size(); i++) {
+        cout << posts[i].title << endl;
+        for (auto c : posts[i].comments) {
+            cout << " - " << c.text << endl;
+        }
+    }
+}
