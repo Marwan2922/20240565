@@ -1,0 +1,16 @@
+class Controller {
+public:
+    vector<Post> posts;
+
+    void addPost(string title) {
+        Post p;
+        p.title = title;
+        posts.push_back(p);
+    }
+
+    void addComment(int index, string text) {
+        Comment c;
+        c.text = text;
+        posts[index].comments.push_back(c);
+    }
+};
